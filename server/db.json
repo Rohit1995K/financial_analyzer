@@ -1,0 +1,45 @@
+{
+    "data": [
+      {
+        "id":1,
+        "customerNumber": 123456001,
+        "amount": 3000,
+        "transactionDescription": "grocieries",
+        "category": "purchasing regular grocieries",
+        "date": "2021-07-26",
+        "time": "T18:17:00.679Z",
+        "month": "July",
+        "payment": "Debit"
+      },
+      {
+        "id":2,
+        "customerNumber": 123456001,
+        "amount": 700,
+        "transactionDescription": "current Bill",
+        "category": "home electricity bill",
+        "date": "2021-07-26",
+        "time": "T18:17:36.332Z",
+        "month": "July",
+        "payment": "Debit"
+      },
+      {
+        "id":3,
+        "customerNumber": 125678934,
+        "amount": 1000,
+        "transactionDescription": "water Bill",
+        "category": "home water bill",
+        "date": "2021-07-26",
+        "time": "T18:17:57.187Z",
+        "month": "July",
+        "payment": "Credit"
+      }
+    ],
+    "user": {
+        "id":1,
+        "first_name":"Rohit",
+        "last_name":"Kanavaje",
+        "username":"rohit95",
+        "password":"123456",
+        "email":"rohitkanavaje29@gmail.com"
+    }
+  }

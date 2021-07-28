@@ -1,0 +1,29 @@
+.example-form-field {
+    width: 100%;
+  }
+
+form {
+    padding: 20px;
+}
+
+.register-box {
+    margin-top: 50px;
+}
+
+.divider {
+    width: 10%;
+    margin: auto;
+}
+
+.mat-card .mat-divider-horizontal {
+    width: 50%;
+    position: relative;
+    background: #ccc;
+    height: 1px;
+    margin: 10px auto;
+}
+
+button {
+    float: right;
+    display: inherit;
+}

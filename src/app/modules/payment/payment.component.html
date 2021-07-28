@@ -1,39 +1,45 @@
 
-<div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="20px">
-    <div class="mat-elevation-z8 paymentForm">
-        <form>
-            <div fxFlex="50"> 
-                <div class="form-group">
-                <label for="exampleInputEmail1">Email address</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+<mat-card class="mat-elevation-z4 paymentForm">
+    <mat-card-content>
+        <h2> Payment Mode </h2>
+        <form [formGroup]="paymentForm" (ngSubmit)="onSubmitPayment(paymentForm.value)">
+            <div fxLayout fxLayout.xs="column" fxLayoutAlign="space-between" fxLayoutWrap="wrap">
+                <div fxFlex="49%" class="widget"> 
+                    <mat-form-field class="example-form-field" appearance="outline">
+                        <mat-label>Customer ID</mat-label>
+                        <input matInput type="text" formControlName="cust_id" pattern="[0-9 ]*" required>
+                    </mat-form-field>
+                    <mat-form-field class="example-form-field" appearance="outline">
+                        <mat-label>Amount</mat-label>
+                        <input matInput type="number" min="1" formControlName="amount" pattern="[0-9 ]*" required>
+                    </mat-form-field>
+                    <mat-form-field class="example-form-field" appearance="outline">
+                        <mat-label>Category Spend</mat-label>
+                        <input matInput type="text" formControlName="category" required>
+                    </mat-form-field>                                        
                 </div>
-                <div class="form-group">
-                <label for="exampleInputPassword1">Password</label>
-                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                <div fxFlex="49%" class="widget"> 
+                    <mat-form-field class="example-form-field" appearance="outline">
+                        <mat-label>Transaction Description</mat-label>
+                        <textarea rows="6" matInput type="text" formControlName="desc" required></textarea>
+                    </mat-form-field>    
+                    <mat-form-field appearance="outline" style="width: 45%;">
+                        <mat-label>Payment Type</mat-label>
+                        <mat-select formControlName="pay_type" required>
+                            <mat-option value="Debit">Making a Payment</mat-option>
+                            <mat-option value="Credit">Receiving a Payment</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                    <mat-form-field appearance="outline" style="float: right; width: 45%;">
+                        <mat-label> Date / Time </mat-label>
+                        <input rows="6" matInput type="date" formControlName="date" required>
+                    </mat-form-field>           
                 </div>
-                <div class="form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                </div>
-                <button type="submit" class="btn btn-primary"> Submit</button>
             </div>
-            <div fxFlex="50"> 
-                <div class="form-group">
-                <label for="exampleInputEmail1">Email address</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                </div>
-                <div class="form-group">
-                <label for="exampleInputPassword1">Password</label>
-                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                </div>
-                <div class="form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                </div>
-                <button type="submit" class="btn btn-primary"> Submit</button>
-            </div>            
+            <p class="right-align">
+                <button mat-flat-button color="primary" [disabled]="!paymentForm.valid">Proceed to PAY</button>
+            </p>            
         </form>
-    </div>
-</div>
+    </mat-card-content>
+</mat-card>
+

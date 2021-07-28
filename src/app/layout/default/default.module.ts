@@ -10,7 +10,13 @@ import { MatDividerModule } from '@angular/material/divider';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import {MatPaginatorModule} from '@angular/material/paginator';
 import { MatTableModule } from '@angular/material/table';
-
+import { MatCardModule } from '@angular/material/card';
+import {MatInputModule} from '@angular/material/input';
+import { MatButtonModule } from '@angular/material/button';
+import {MatSelectModule} from '@angular/material/select';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import { CommonService } from 'src/app/modules/common.service';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -18,7 +24,7 @@ import { MatTableModule } from '@angular/material/table';
   declarations: [
     DefaultComponent,
     DashboardComponent,
-    PaymentComponent
+    PaymentComponent,
   ],
   imports: [
     CommonModule,
@@ -28,7 +34,16 @@ import { MatTableModule } from '@angular/material/table';
     MatDividerModule,
     MatPaginatorModule,
     MatTableModule,
+    MatCardModule,
     FlexLayoutModule,
+    MatInputModule,
+    MatButtonModule,
+    MatSelectModule,
+    MatDatepickerModule,
+    ReactiveFormsModule
+  ],
+  providers: [
+    CommonService
   ]
 })
 export class DefaultModule { }
