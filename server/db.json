@@ -3,7 +3,7 @@
       {
         "id":1,
         "customerNumber": 123456001,
-        "amount": 3000,
+        "amount": 300,
         "transactionDescription": "grocieries",
         "category": "purchasing regular grocieries",
         "date": "2021-07-26",
@@ -25,14 +25,25 @@
       {
         "id":3,
         "customerNumber": 125678934,
-        "amount": 1000,
+        "amount": 100,
         "transactionDescription": "water Bill",
         "category": "home water bill",
         "date": "2021-07-26",
         "time": "T18:17:57.187Z",
         "month": "July",
         "payment": "Credit"
-      }
+      },
+      {
+        "id":4,
+        "customerNumber": 125678934,
+        "amount": 300,
+        "transactionDescription": "water Bill",
+        "category": "home water bill",
+        "date": "2021-07-26",
+        "time": "T18:17:57.187Z",
+        "month": "July",
+        "payment": "Credit"
+      }      
     ],
     "user": {
         "id":1,

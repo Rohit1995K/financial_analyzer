@@ -1,13 +1,14 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import {MatToolbarModule} from '@angular/material/toolbar';
-import {MatMenuModule} from '@angular/material/menu';
-import {MatIconModule} from '@angular/material/icon';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatIconModule } from '@angular/material/icon';
 import { FlexLayoutModule } from '@angular/flex-layout';
-import {MatButtonModule} from '@angular/material/button';
+import { MatButtonModule } from '@angular/material/button';
 import { MatDividerModule } from '@angular/material/divider';
-import {MatSidenavModule} from '@angular/material/sidenav';
-import {MatListModule} from '@angular/material/list';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatListModule } from '@angular/material/list';
+import { MatCardModule } from '@angular/material/card';
 import { RouterModule } from '@angular/router';
 
 import { HeaderComponent } from './components/header/header.component';
@@ -15,7 +16,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { AreaComponent } from './widgets/area/area.component';
 import { HighchartsChartModule } from 'highcharts-angular';
-
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,9 @@ import { HighchartsChartModule } from 'highcharts-angular';
     MatSidenavModule,
     MatListModule,
     FlexLayoutModule,
-    HighchartsChartModule
+    MatCardModule,
+    HighchartsChartModule,
+    FormsModule
   ],
   exports: [
     HeaderComponent,

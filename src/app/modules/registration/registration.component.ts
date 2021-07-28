@@ -17,7 +17,8 @@ export class RegistrationComponent implements OnInit {
     cpwd: new FormControl('', [Validators.required])
   });
 
-  constructor(private fb: FormBuilder) { }
+  // constructor(private fb: FormBuilder) { }
+  constructor() { }
 
   ngOnInit(): void {}
 

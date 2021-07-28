@@ -22,4 +22,20 @@ describe('RegistrationComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('email field validity', () => {
+    const email = component.registerForm.controls.email;
+    expect(email.valid).toBeFalsy();
+  });
+
+  it('First Name field validity', () => {
+    const fname = component.registerForm.controls.fname;
+    expect(fname.valid).toBeFalsy();
+  });
+
+  it('Last Name field validity', () => {
+    const lname = component.registerForm.controls.lname;
+    expect(lname.valid).toBeFalsy();
+  });
+
 });

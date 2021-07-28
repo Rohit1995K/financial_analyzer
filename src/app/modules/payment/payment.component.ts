@@ -17,13 +17,14 @@ export class PaymentComponent implements OnInit {
     date: new FormControl('', [Validators.required])
   });
 
-  constructor(private fb: FormBuilder) { }
+  // constructor(private fb: FormBuilder) { }
+  constructor() { }
 
   ngOnInit(): void {}
 
   onSubmitPayment(value): void {
     console.log(value);
-    this.paymentForm.reset();
+    // this.paymentForm.reset();
   }
 
 }
