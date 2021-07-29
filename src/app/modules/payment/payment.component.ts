@@ -24,7 +24,6 @@ export class PaymentComponent implements OnInit {
 
   onSubmitPayment(value): void {
     console.log(value);
-    // this.paymentForm.reset();
+    this.paymentForm.reset();
   }
-
 }
