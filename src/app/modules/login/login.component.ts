@@ -21,7 +21,6 @@ export class LoginComponent implements OnInit {
 
   onSubmit(value): void {
     if (this.loginForm.valid){
-      alert('Logged in Successfully');
       localStorage.setItem('token', 'dummy_token');
       this.loginForm.value.uname === 'rohit1995$' ? localStorage.setItem('userType', 'user') : localStorage.setItem('userType', 'admin');
       this.loginForm.reset();
