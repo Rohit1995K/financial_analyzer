@@ -20,11 +20,10 @@ export class DashboardComponent implements AfterViewInit, OnInit {
 
   ngOnInit(): void {
     this.getData();
-    this.dataSource.paginator = this.paginator;
   }
 
   ngAfterViewInit(): void {
-    // this.getData();
+    this.dataSource.paginator = this.paginator;
   }
 
   public getData(): void {

@@ -5,6 +5,7 @@ import { DashboardComponent } from './modules/dashboard/dashboard.component';
 import { LoginComponent } from './modules/login/login.component';
 import { PaymentComponent } from './modules/payment/payment.component';
 import { RegistrationComponent } from './modules/registration/registration.component';
+import { AuthGuard } from './shared/auth.guard';
 
 const routes: Routes = [
   {
@@ -18,6 +19,7 @@ const routes: Routes = [
   {
     path : '',
     component : DefaultComponent,
+    canActivate : [AuthGuard],
     children : [
       {
         path : 'dashboard',

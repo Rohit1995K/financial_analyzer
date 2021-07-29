@@ -33,10 +33,13 @@ export class AreaComponent implements OnInit {
         console.log(this.transactions);
 
         this.transactions.map((val) => {
-            if (val.payment === 'Debit'){ this.debit.push(val.amount); }
-            else { this.credit.push(val.amount); }
-            console.log(this.debit);
-            console.log(this.credit);
+            if (val.payment === 'Debit') {
+                this.debitAmount += val.amount;
+                this.debit.push(val.amount);
+            } else {
+                this.creditAmount += val.amount;
+                this.credit.push(val.amount);
+            }
 
             this.chartOptions = {
                 chart: {
@@ -79,7 +82,7 @@ export class AreaComponent implements OnInit {
                 },
                 yAxis: {
                     title: {
-                        text: 'Fruit units'
+                        text: 'Amount Range'
                     }
                 },
                 tooltip: {

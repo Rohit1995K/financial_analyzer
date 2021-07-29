@@ -11,7 +11,7 @@
           			<mat-label>Password</mat-label>
           			<input matInput type="password" formControlName="pwd" required>
         		</mat-form-field>
-        		<button mat-flat-button color="primary" routerLink="/dashboard" [disabled]="!loginForm.valid">LOGIN</button>
+        		<button mat-flat-button color="primary" [disabled]="!loginForm.valid">LOGIN</button>
         		<mat-divider class="divider"></mat-divider>
         		<button mat-button color="primary" routerLink="/register">REGISTRATION</button>
       		</form>
