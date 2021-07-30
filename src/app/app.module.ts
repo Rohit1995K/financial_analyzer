@@ -14,6 +14,8 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatDividerModule} from '@angular/material/divider';
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
+
 
 @NgModule({
   declarations: [
@@ -33,6 +35,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     MatButtonModule,
     MatDividerModule,
     FlexLayoutModule,
+    MatSnackBarModule,
     ReactiveFormsModule
   ],
   providers: [],
