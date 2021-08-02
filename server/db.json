@@ -6,9 +6,9 @@
         "amount": 300,
         "transactionDescription": "grocieries",
         "category": "purchasing regular grocieries",
-        "date": "2021-07-26",
+        "date": "2021-01-02",
         "time": "T18:17:00.679Z",
-        "month": "July",
+        "month": "Jan",
         "payment": "Debit"
       },
       {
@@ -17,9 +17,9 @@
         "amount": 100,
         "transactionDescription": "current Bill",
         "category": "home electricity bill",
-        "date": "2021-07-26",
+        "date": "2021-01-15",
         "time": "T18:17:36.332Z",
-        "month": "July",
+        "month": "Jan",
         "payment": "Debit"
       },
       {
@@ -28,9 +28,9 @@
         "amount": 400,
         "transactionDescription": "water Bill",
         "category": "home water bill",
-        "date": "2021-07-26",
+        "date": "2021-01-26",
         "time": "T18:17:57.187Z",
-        "month": "July",
+        "month": "Jan",
         "payment": "Credit"
       },
       {
@@ -39,9 +39,9 @@
         "amount": 600,
         "transactionDescription": "water Bill",
         "category": "home water bill",
-        "date": "2021-07-26",
+        "date": "2021-02-20",
         "time": "T18:17:57.187Z",
-        "month": "July",
+        "month": "Feb",
         "payment": "Credit"
       },
       {
@@ -50,9 +50,9 @@
         "amount": 300,
         "transactionDescription": "grocieries",
         "category": "purchasing regular grocieries",
-        "date": "2021-07-26",
+        "date": "2021-03-10",
         "time": "T18:17:00.679Z",
-        "month": "July",
+        "month": "March",
         "payment": "Debit"
       },
       {
@@ -61,9 +61,9 @@
         "amount": 200,
         "transactionDescription": "current Bill",
         "category": "home electricity bill",
-        "date": "2021-07-26",
+        "date": "2021-03-25",
         "time": "T18:17:36.332Z",
-        "month": "July",
+        "month": "March",
         "payment": "Debit"
       },
       {
@@ -72,9 +72,9 @@
         "amount": 0,
         "transactionDescription": "water Bill",
         "category": "home water bill",
-        "date": "2021-07-26",
+        "date": "2021-04-20",
         "time": "T18:17:57.187Z",
-        "month": "July",
+        "month": "April",
         "payment": "Credit"
       },
       {
@@ -83,9 +83,9 @@
         "amount": 0,
         "transactionDescription": "water Bill",
         "category": "home water bill",
-        "date": "2021-07-26",
+        "date": "2021-05-05",
         "time": "T18:17:57.187Z",
-        "month": "July",
+        "month": "May",
         "payment": "Credit"
       },
       {
@@ -94,9 +94,9 @@
         "amount": 0,
         "transactionDescription": "grocieries",
         "category": "purchasing regular grocieries",
-        "date": "2021-07-26",
+        "date": "2021-05-15",
         "time": "T18:17:00.679Z",
-        "month": "July",
+        "month": "May",
         "payment": "Debit"
       },
       {
@@ -105,9 +105,9 @@
         "amount": 250,
         "transactionDescription": "current Bill",
         "category": "home electricity bill",
-        "date": "2021-07-26",
+        "date": "2021-05-25",
         "time": "T18:17:36.332Z",
-        "month": "July",
+        "month": "May",
         "payment": "Debit"
       },
       {
@@ -116,9 +116,9 @@
         "amount": 400,
         "transactionDescription": "water Bill",
         "category": "home water bill",
-        "date": "2021-07-26",
+        "date": "2021-06-10",
         "time": "T18:17:57.187Z",
-        "month": "July",
+        "month": "June",
         "payment": "Credit"
       },
       {
@@ -127,9 +127,9 @@
         "amount": 600,
         "transactionDescription": "water Bill",
         "category": "home water bill",
-        "date": "2021-07-26",
+        "date": "2021-06-25",
         "time": "T18:17:57.187Z",
-        "month": "July",
+        "month": "June",
         "payment": "Credit"
       },
       {
@@ -138,7 +138,7 @@
         "amount": 300,
         "transactionDescription": "grocieries",
         "category": "purchasing regular grocieries",
-        "date": "2021-07-26",
+        "date": "2021-07-20",
         "time": "T18:17:00.679Z",
         "month": "July",
         "payment": "Debit"
@@ -149,7 +149,7 @@
         "amount": 500,
         "transactionDescription": "current Bill",
         "category": "home electricity bill",
-        "date": "2021-07-26",
+        "date": "2021-07-25",
         "time": "T18:17:36.332Z",
         "month": "July",
         "payment": "Debit"
@@ -160,9 +160,9 @@
         "amount": 0,
         "transactionDescription": "water Bill",
         "category": "home water bill",
-        "date": "2021-07-26",
+        "date": "2021-08-25",
         "time": "T18:17:57.187Z",
-        "month": "July",
+        "month": "Aug",
         "payment": "Credit"
       },
       {
@@ -171,9 +171,9 @@
         "amount": 0,
         "transactionDescription": "water Bill",
         "category": "home water bill",
-        "date": "2021-07-26",
+        "date": "2021-09-26",
         "time": "T18:17:57.187Z",
-        "month": "July",
+        "month": "Sept",
         "payment": "Credit"
       }      
     ],

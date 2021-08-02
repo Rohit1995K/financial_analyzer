@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators, FormControl } from '@angular/forms';
-import { MatSnackBar } from '@angular/material/snack-bar';
+// import { MatSnackBar } from '@angular/material/snack-bar';
 import { Router } from '@angular/router';
 
 @Component({
@@ -15,7 +15,7 @@ export class LoginComponent implements OnInit {
     pwd: new FormControl('', [Validators.required]),
   });
 
-  constructor(public router: Router, private snackBar: MatSnackBar) { }
+  constructor(public router: Router) { }
 
   ngOnInit(): void {
   }

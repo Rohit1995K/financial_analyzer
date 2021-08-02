@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component,  Input,  OnInit } from '@angular/core';
 import * as Highcharts from 'highcharts';
 import HC_exporting from 'highcharts/modules/exporting';
 import { CommonService } from '../../../modules/common.service';
@@ -19,8 +19,9 @@ export class AreaComponent implements OnInit {
   constructor(private commonService: CommonService) { }
 
   transactions = [];
-  credit = [];
-  debit = [];
+  month = [];
+  credit = []; cc = [];
+  debit = []; dd = [];
   ngOnInit(): void {
     this.setGraph();
     HC_exporting(Highcharts);
@@ -33,12 +34,15 @@ export class AreaComponent implements OnInit {
         console.log(this.transactions);
 
         this.transactions.map((val) => {
+            this.month.push(val.month);
             if (val.payment === 'Debit') {
                 this.debitAmount += val.amount;
-                this.debit.push(val.amount);
+                this.dd = [val.date, val.amount];
+                this.debit.push(this.dd);
             } else {
                 this.creditAmount += val.amount;
-                this.credit.push(val.amount);
+                this.cc = [val.date, val.amount];
+                this.credit.push(this.cc);
             }
 
             this.chartOptions = {
@@ -105,6 +109,7 @@ export class AreaComponent implements OnInit {
                     data: this.debit
                 }]
             };
+
 
          });
     });
